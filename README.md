@@ -1,4 +1,6 @@
-# Mathias’s dotfiles
+# wem3 dotfiles  
+
+(ripped off shamelessly from Mathias Bynens)
 
 ![Screenshot of my shell prompt](http://i.imgur.com/EkEtphC.png)
 
