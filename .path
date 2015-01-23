@@ -4,6 +4,6 @@ FSLOUTPUTTYPE=NIFTI_GZ
 # slap MATLAB on the path so we can get fuckin' stupid with it
 MATLABDIR=/Applications/MATLAB_R2015a.app/bin
 # append them both to the path (behind /usr/local/bin, where e'erbody'z at)
-PATH=/usr/local/bin:${MATLABDIR}:${FSLDIR}/bin:$PATH
+PATH=/usr/local/bin:/usr/local/sbin:${MATLABDIR}:${FSLDIR}/bin:$PATH
 export FSLDIR MATLABDIR PATH
 . ${FSLDIR}/etc/fslconf/fsl.sh
