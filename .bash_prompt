@@ -116,5 +116,18 @@ PS1+="\n";
 PS1+="\[${white}\]\$ \[${reset}\]"; # `$` (and reset color)
 export PS1;
 
-PS2="\[${yellow}\]→ \[${reset}\]";
+# set code for virtual environment a la http://engineerwithoutacause.com/show-current-virtualenv-on-bash-prompt.html
+# Get Virtual Env
+if [[ $VIRTUAL_ENV != "" ]]
+    then
+      # Strip out the path and just leave the env name
+      venv=" ${violet}(${VIRTUAL_ENV##*/})"
+else
+      # In case you don't have one activated
+      venv=''
+fi
+
+export PS1="${myuser}${path}${venv}${branch} ${end}"
+
+PS2="${venv} \[${yellow}\]→ \[${reset}\]";
 export PS2;
