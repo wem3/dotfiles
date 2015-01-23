@@ -69,7 +69,7 @@ brew tap caskroom/versions
 brew tap caskroom/fonts
 
 echo "Brewing up XQuartz"
-brew cask install XQuartz
+brew cask install xquartz
 
 echo "Brewing up Source Code Pro..."
 brew cask install font-source-code-pro
