@@ -1,6 +1,17 @@
 #!/usr/bin/env bash
 
-# Install command-line tools using Homebrew.
+# Install command-line tools using Homebrew 
+# and point&click tools with Homebrew-cask.
+# hacked from Mathias Bynen's brew.sh ~#wem3#~ [150123]
+
+# check to see if homebrew is installed, exit if not
+{
+if [ ! -f /usr/local/bin/brew ]; then
+    echo "Homebrew not installed!"
+    echo "download Homebrew at http://brew.sh/"
+    exit 0
+fi
+}
 
 # Ask for the administrator password upfront.
 sudo -v
@@ -14,6 +25,7 @@ brew update
 # Upgrade any already-installed formulae.
 brew upgrade
 
+echo "Brewing up system utilities..."
 # Install GNU core utilities (those that come with OS X are outdated).
 # Don’t forget to add `$(brew --prefix coreutils)/libexec/gnubin` to `$PATH`.
 brew install coreutils
@@ -43,24 +55,39 @@ brew install homebrew/php/php55 --with-gmp
 
 # Install other useful binaries.
 brew install ack
-#brew install exiv2
 brew install git
 brew install imagemagick --with-webp
-brew install lua
-brew install lynx
-brew install p7zip
-brew install pigz
-brew install pv
-brew install rename
-brew install rhino
-brew install speedtest_cli
-brew install tree
-brew install webkit2png
-brew install zopfli
 
-# Install Node.js. Note: this installs `npm` too, using the recommended
-# installation method.
-brew install node
+echo "Brewing up Homebrew-cask..."
+# Get Hombrew-cask to automate installation of other applications
+brew install caskroom/cask/brew-cask
+
+# Tell Homebrew-cask to symlink to /Applications (instead of ~/Applications)
+brew cask --appdir=/Applications
+# Tap some needed caskrooms
+brew tap caskroom/versions
+brew tap caskroom/fonts
+
+echo "Brewing up XQuartz"
+brew cask install XQuartz
+
+echo "Brewing up Source Code Pro..."
+brew cask install font-source-code-pro
+
+echo "Brewing up Sublime Text 3"
+brew cask install sublime-text3
+
+echo "Brewing up Chrome"
+brew cask install google-chrome
+
+echo "Brewing up PathFinder"
+brew cask install path-finder
+
+echo "Brewing up Dropbox"
+brew cask install Dropbox
+
+echo "Brewing up Filezilla"
+brew cask install filezilla
 
 # Remove outdated versions from the cellar.
 brew cleanup
