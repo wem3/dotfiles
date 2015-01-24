@@ -109,5 +109,9 @@ brew install autoenv
 
 # source the autoenv.sh script to complete setup of virtualenv
 source /usr/local/opt/autoenv/activate.sh
+
+# Brew up rbenv & ruby-build
+brew install rbenv ruby-build
+ 
 # Remove outdated versions from the cellar.
 brew cleanup
