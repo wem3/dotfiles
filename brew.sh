@@ -89,5 +89,25 @@ brew cask install Dropbox
 echo "Brewing up Filezilla"
 brew cask install filezilla
 
+echo "Brewing up Python"
+# straight up python (brewed against openSSL)
+brew install python --with-openSSL
+
+echo "Setting up Python"
+# upgrade setuptools via pip
+pip install --upgrade setuptools
+
+# upgrade pip itself via pip
+pip install --upgrade pip
+
+# now set up virtualenv
+pip install virtualenv  
+pip install virtualenvwrapper
+
+# autoenv ought to be sweet
+brew install autoenv
+
+# source the autoenv.sh script to complete setup of virtualenv
+source /usr/local/opt/autoenv/activate.sh
 # Remove outdated versions from the cellar.
 brew cleanup
