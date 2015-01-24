@@ -1,7 +1,6 @@
 #!/usr/bin/env bash
 
 # Install base python libaries using Homebrew
-# because pip install has dependency issues...
 
 # straight up python (brewed against openSSL)
 brew install python --with-openSSL

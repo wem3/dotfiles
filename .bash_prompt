@@ -121,13 +121,12 @@ export PS1;
 if [[ $VIRTUAL_ENV != "" ]]
     then
       # Strip out the path and just leave the env name
-      venv=" ${violet}(${VIRTUAL_ENV##*/})"
+      venv=" (${VIRTUAL_ENV##*/})"
 else
       # In case you don't have one activated
       venv=''
 fi
 
-export PS1="${myuser}${path}${venv}${branch} ${end}"
-
-PS2="${venv} \[${yellow}\]→ \[${reset}\]";
+PS2="\[${violet}\]${venv}"
+PS2+=" \[${yellow}\]→ \[${reset}\]";
 export PS2;
