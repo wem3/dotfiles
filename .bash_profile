@@ -51,3 +51,7 @@ complete -o "nospace" -W "Contacts Calendar Dock Finder Mail Safari iTunes Syste
 if which rbenv > /dev/null;
   eval "$(rbenv init -)";
 fi
+
+# Source virtualenvwrapper/autoenv (are these incompatible?)
+source /usr/local/bin/virtualenvwrapper.sh
+source /usr/local/opt/autoenv/activate.sh

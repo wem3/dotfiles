@@ -127,6 +127,6 @@ else
       venv=''
 fi
 
-PS2="\[${violet}\]${venv}"
+PS2="\[${violet}\] ${venv}";
 PS2+=" \[${yellow}\]→ \[${reset}\]";
 export PS2;
