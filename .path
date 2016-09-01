@@ -5,7 +5,7 @@ FSLOUTPUTTYPE=NIFTI_GZ
 export FREESURFER_HOME=<freesurfer_installation_directory>/freesurfer
 source $FREESURFER_HOME/SetUpFreeSurfer.sh
 # slap MATLAB on the path so we can get fuckin' stupid with it
-MATLABDIR=/Applications/MATLAB_R2015a.app/bin
+MATLABDIR=/Applications/MATLAB_R2016a.app/bin
 # append them both to the path (behind /usr/local/bin, where e'erbody'z at)
 PATH=/usr/local/bin:/usr/local/sbin:${MATLABDIR}:${FSLDIR}/bin:$PATH
 export FSLDIR MATLABDIR PATH
