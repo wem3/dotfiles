@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-# ~/.macos — set defaults for OS X 10.11
+# ~/.macos — set defaults for OS X 10.12 (?)
 # hacked from Mathias Bynen's legendary .osx (https://mths.be/macos)
 
 # Ask for the administrator password upfront
@@ -597,7 +597,7 @@ tell application "Terminal"
     local allOpenedWindows
     local initialOpenedWindows
     local windowID
-    set themeName to "Solarized Dark xterm-256color"
+    set themeName to "Solarized Darcula"
     (* Store the IDs of all the open terminal windows. *)
     set initialOpenedWindows to id of every window
     (* Open the custom theme so that it gets added to the list
@@ -635,7 +635,7 @@ defaults write org.x.X11 wm_ffm -bool true
 defaults write com.apple.terminal SecureKeyboardEntry -bool true
 
 # Install the Solarized Dark theme for iTerm
-open "${HOME}/init/Solarized Dark.itermcolors"
+# open "${HOME}/init/Solarized Dark.itermcolors"
 
 # Don’t display the annoying prompt when quitting iTerm
 defaults write com.googlecode.iterm2 PromptOnQuit -bool false
