@@ -1,6 +1,6 @@
 {
 	"always_prompt_for_file_reload": false,
-	"always_show_minimap_viewport": false,
+	"always_show_minimap_viewport": true,
 	"animation_enabled": true,
 	"atomic_save": true,
 	"auto_close_tags": true,
@@ -42,7 +42,7 @@
 	"caret_extra_width": 0,
 	"caret_style": "phase",
 	"close_windows_when_empty": true,
-	"color_scheme": "Packages/User/base16-eighties.dark (SL).tmTheme",
+	"color_scheme": "Packages/Boxy Theme/schemes/Boxy Monokai.tmTheme",
 	"copy_with_empty_selection": true,
 	"create_window_at_startup": true,
 	"default_encoding": "UTF-8",
@@ -52,7 +52,7 @@
 	"drag_text": true,
 	"draw_centered": false,
 	"draw_indent_guides": true,
-	"draw_minimap_border": false,
+	"draw_minimap_border": true,
 	"draw_white_space": "selection",
 	"enable_hexadecimal_encoding": true,
 	"enable_tab_scrolling": true,
@@ -100,10 +100,11 @@
 	"gpu_window_buffer": "auto",
 	"gutter": true,
 	"highlight_line": false,
-	"highlight_modified_tabs": false,
+	"highlight_modified_tabs": true,
 	"hot_exit": true,
 	"ignored_packages":
 	[
+		"Markdown",
 		"Vintage"
 	],
 	"indent_guide_options":
@@ -141,7 +142,6 @@
 	"save_on_focus_lost": false,
 	"scroll_past_end": true,
 	"scroll_speed": 1.0,
-	"shift_tab_unindent": false,
 	"show_encoding": false,
 	"show_full_path": true,
 	"show_line_endings": false,
@@ -150,8 +150,8 @@
 	"smart_indent": true,
 	"spell_check": false,
 	"tab_completion": true,
-	"tab_size": 2,
-	"theme": "Flatgrammer.sublime-theme",
+	"tab_size": 4,
+	"theme": "Boxy Monokai.sublime-theme",
 	"translate_tabs_to_spaces": true,
 	"tree_animation_enabled": true,
 	"trim_automatic_white_space": true,
