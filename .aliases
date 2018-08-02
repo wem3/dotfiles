@@ -139,3 +139,15 @@ alias afk="/System/Library/CoreServices/Menu\ Extras/User.menu/Contents/Resource
 
 # Reload the shell (i.e. invoke as a login shell)
 alias reload="exec $SHELL -l"
+
+# wem3 percy stash of aliases
+# launch matlab from terminal
+alias matlab="/Applications/MATLAB_R2017a.app/bin/matlab"
+# launch autoenv to get code for Harvard VPN
+alias oa="sh /Users/wem3/Developer/wem3-openauth/wem3-openauth.sh & /Applications/Cisco/Cisco\ AnyConnect\ Secure\ Mobility\ Client.app/Contents/MacOS/Cisco\ AnyConnect\ Secure\ Mobility\ Client &"
+# start login process to the ncf cluster 
+alias ncf="ssh -YC wem3@ncfvdi.rc.fas.harvard.edu"
+# sftp via workstation 13 on the ncf cluster
+alias ncftp="sftp wem3@ncfvdi.rc.fas.harvard.edu"
+# ssh into socialdecisionmakinglaboratory.com
+alias hinl="ssh wem3@socialdecisionmakinglaboratory.com"

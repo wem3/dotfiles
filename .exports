@@ -22,3 +22,6 @@ export GREP_OPTIONS='--color=auto';
 
 # Set rbenv to use Homebrew's
 export RBENV_ROOT=/usr/local/var/rbenv
+
+# source anaconda so we're not using system python
+export PATH="/Users/wem3/Envs/anaconda3/bin:$PATH"
