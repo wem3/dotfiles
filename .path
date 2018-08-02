@@ -1,14 +1,14 @@
 # set FSLDIR & source FSL (why? Chuck sez so?)
-FSLDIR=/usr/local/fsl
-FSLOUTPUTTYPE=NIFTI_GZ
+# FSLDIR=/usr/local/fsl
+# FSLOUTPUTTYPE=NIFTI_GZ
 # source Freesurfer (it will pathify itself I think...)
-export FREESURFER_HOME=<freesurfer_installation_directory>/freesurfer
-source $FREESURFER_HOME/SetUpFreeSurfer.sh
+# export FREESURFER_HOME=<freesurfer_installation_directory>/freesurfer
+# source $FREESURFER_HOME/SetUpFreeSurfer.sh
 # slap MATLAB on the path so we can get fuckin' stupid with it
 MATLABDIR=/Applications/MATLAB_R2016a.app/bin
 # append them both to the path (behind /usr/local/bin, where e'erbody'z at)
 PATH=/usr/local/bin:/usr/local/sbin:${MATLABDIR}:${FSLDIR}/bin:$PATH
-export FSLDIR MATLABDIR PATH
-. ${FSLDIR}/etc/fslconf/fsl.sh
+export MATLABDIR PATH
+#. ${FSLDIR}/etc/fslconf/fsl.sh
 # brew.sh says we need to do:
 # Don’t forget to add `$(brew --prefix coreutils)/libexec/gnubin` to `$PATH`.
